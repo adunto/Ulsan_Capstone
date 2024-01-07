@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_menu_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="카테고리" />
+    <item
+        android:id="@+id/home_menu_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="검색" />
+    <item
+        android:id="@+id/home_menu_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="홈" />
+    <item
+        android:id="@+id/home_menu_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="게시판" />
+    <item
+        android:id="@+id/home_menu_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="설정" />
+</menu>
