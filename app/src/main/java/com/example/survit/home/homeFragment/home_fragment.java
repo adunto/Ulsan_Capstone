@@ -1,4 +1,4 @@
-package com.example.survit.login.loginFragment;
+package com.example.survit.home.homeFragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,15 +11,8 @@ import androidx.fragment.app.Fragment;
 
 import com.example.survit.R;
 
-/*
-    작업 일시 : 2024-01-06
-    코드 내용 : 로그인 화면 프래그먼트
-    수정 내용 : 없음 < 수정시 여기에 명시할 것 >
- */
-
-
-public class Fragment2 extends Fragment{
-    public Fragment2(){
+public class home_fragment extends Fragment {
+    public home_fragment(){
 
     }
 
@@ -31,6 +24,8 @@ public class Fragment2 extends Fragment{
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.login_fragment2, container, false);
+        View view = inflater.inflate(R.layout.home_layout, container, false);
+
+        return view;
     }
 }
