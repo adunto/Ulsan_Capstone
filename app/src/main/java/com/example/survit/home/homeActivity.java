@@ -14,7 +14,6 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.survit.R;
 import com.example.survit.home.homeFragment.category_fragment;
 import com.example.survit.home.homeFragment.home_fragment;
-import com.example.survit.home.homeFragment.search_fragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.List;
@@ -54,7 +53,7 @@ public class homeActivity extends AppCompatActivity {
 
                             return true;
                         }
-                        else if (itemId == R.id.home_menu_board) {
+                        else if (itemId == R.id.home_menu_userinfo) {
                             // 게시판 프레그먼트
 
 
