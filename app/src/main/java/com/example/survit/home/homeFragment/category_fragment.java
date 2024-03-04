@@ -25,7 +25,7 @@ public class category_fragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.category_layout, container, false);
+        View view = inflater.inflate(R.layout.favorite_layout, container, false);
 
         return view;
     }

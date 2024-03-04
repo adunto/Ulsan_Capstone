@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,7 +16,9 @@
         tools:targetApi="31">
         <activity
             android:name=".login.LoginActivity"
-            android:exported="true">
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,7 +26,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".home.homeActivity" />
+            android:name=".home.homeActivity"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name=".home.searchActivity"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name=".addSurvey.SurveyAddActivity"
+            android:windowSoftInputMode="adjustNothing"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 

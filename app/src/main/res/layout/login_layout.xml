@@ -1,75 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
-
-    <Button
-        android:id="@+id/start_facebook"
-        android:layout_width="375dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="500dp"
-        android:layout_marginEnd="20dp"
-        android:background="#077AE8"
-        android:backgroundTint="#077AE8"
-        android:drawableLeft="@drawable/facebook_icon_set"
-        android:drawablePadding="10dp"
-        android:foregroundTint="#077AE8"
-        android:gravity="center|start"
-        android:paddingLeft="15dp"
-        android:text="페이스북으로 시작하기"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:cornerRadius="@null"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/start_google"
-        android:layout_width="375dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="430dp"
-        android:layout_marginEnd="20dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#FFFFFF"
-        android:drawableLeft="@drawable/google_icon_set"
-        android:drawablePadding="10dp"
-        android:foregroundTint="#FFFFFF"
-        android:gravity="center|start"
-        android:paddingLeft="15dp"
-        android:text="구글로 시작하기"
-        android:textSize="18sp"
-        app:cornerRadius="@null"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:background="#FFFFFF"
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="475dp"
         android:layout_height="162dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="469dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
         app:srcCompat="@drawable/image01" />
+
+    <EditText
+        android:id="@+id/email_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:drawableRight="@drawable/mail_icon"
+        android:ems="10"
+        android:hint="이메일"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/password_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableRight="@drawable/password_icon"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/start_email"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_style"
+        android:text="이메일로 시작하기"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/start_kakao"
-        android:layout_width="375dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="350dp"
-        android:layout_marginEnd="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
         android:background="#FEE400"
         android:backgroundTint="#FEE400"
         android:drawableLeft="@drawable/kakaotalk_icon_set"
@@ -78,24 +64,22 @@
         android:gravity="center|start"
         android:paddingLeft="15dp"
         android:text="카카오톡으로 시작하기"
-        android:textSize="18sp"
-        app:cornerRadius="@null"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/start_email"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/start_google"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="570dp"
-        android:layout_marginEnd="152dp"
-        android:text="이메일로 시작하기"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/google_icon_set"
+        android:drawablePadding="10dp"
+        android:foregroundTint="#FFFFFF"
+        android:gravity="center|start|center_horizontal"
+        android:paddingLeft="15dp"
+        android:text="구글로 시작하기"
+        android:textSize="18sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
